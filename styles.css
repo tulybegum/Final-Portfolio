@@ -1,0 +1,34 @@
+html,body{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header
+.nav{
+
+}
+body{
+    background-image: url("https://upennfword.com/wp-content/uploads/2021/05/pexels-jill-burrow-6681877.jpg?w=1400");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    background-color:#005a8b;
+    color:white;
+    text-align: center;
+    padding:1rem;
+    padding-right:0px;
+    padding-bottom: 1rem;
+    padding-left: 0px; 
+    margin-top: auto; 
+    
+}
+
