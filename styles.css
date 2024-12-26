@@ -1,34 +1,212 @@
-html,body{
-    width:100%;
-    height:100%;
-    overflow: hidden;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.header
-.nav{
-
-}
-body{
-    background-image: url("https://upennfword.com/wp-content/uploads/2021/05/pexels-jill-burrow-6681877.jpg?w=1400");
-    background-repeat: no-repeat;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images8.alphacoders.com/134/1347727.png') no-repeat center center fixed;
     background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-footer{
-    background-color:#005a8b;
-    color:red;
+.wrapper, .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #f39c12;
+}
+.Logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f39c12;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.Logo:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.nav-area {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-area li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-area li a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+.page-body {
+    padding: 50px 30px;
+    max-width: 900px;
+    margin: auto;
     text-align: center;
-    padding:1rem;
-    padding-right:0px;
-    padding-bottom: 1rem;
-    padding-left: 0px; 
-    margin-top: auto; 
-    
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+.home .page-body {
+    background-color: transparent;
+    box-shadow: none;
+}
+.home .centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    flex-direction: column;
+}
+.page-body h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.page-body h2, .page-body p, .page-body h3 {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.highlight {
+    color:rgb(36, 148, 88);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    text-align: center; 
+    display: inline-block; 
+    transition: all 0.3s ease;
+}
+.highlight:hover {
+    color:rgb(36, 148, 88);
+    background-color: #f39c12;
+    transform: scale(1.05); 
+}
+footer, .footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    border-top: 2px solid #f39c12;
+}
+footer a, .footer a {
+    text-decoration: none;
+    color: #f39c12;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+footer a:hover, .footer a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 30px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .wrapper, .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-area {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .page-body h1 {
+        font-size: 2.5rem;
+    }
+    .page-body h2, .page-body p, .page-body h3 {
+        font-size: 1rem;
+    }
+}
+.footer {
+    background-color: #000000; 
+    color: white; 
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px; 
+}
+.footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.footer-item {
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10px; 
+}
+.footer-item:hover {
+    transform: translateY(-10px);
+}
+.footer-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.footer-item a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
